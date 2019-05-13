@@ -21,17 +21,17 @@ $color-15: #2C3E50;
 }
 
 .wrap {
-    width: 1170px;
+    width: 1180px;
     margin: 0 auto;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 700px);
-    grid-gap: 15px;
+    grid-template-columns: repeat(2, 569px);
+    grid-gap: 31px;
 
 
     .alert {
         border: 1px solid $color-1;
-        padding: 40px 45px;
+        padding: 34px 74px 35px 50px;
         position: relative;
         border-radius: 10px;
         display: flex;
@@ -44,8 +44,10 @@ $color-15: #2C3E50;
                 font-family: "lato";
                 font-weight: 900;
                 color: $color-4;
-                margin-bottom: 5px;
                 font-size: 14px;
+                line-height: 26px;
+                margin-bottom: 6px;
+                letter-spacing: 1.41px;
             }
             p {
                 color: $color-5;
@@ -59,14 +61,14 @@ $color-15: #2C3E50;
         &::before{
             font-family: FontAwesome;
             content: "\f12a";
-            width: 60px;
-            height: 60px;
-            border: 3px solid ;
+            width: 49px;
+            height: 49px;
+            border: 7px solid;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 20px;
+            margin-right: 28px;
             flex-shrink: 0;
             background: $color-2;
             border-color: $color-3;
@@ -79,8 +81,8 @@ $color-15: #2C3E50;
 
     a {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 14px;
+        right: 18px;
         text-decoration: none;
 
         &::after{
@@ -120,6 +122,7 @@ $color-15: #2C3E50;
     }
     .info {
         grid-column: span 2;
+        margin-top: -2px;
     }
 
     .info::before {
