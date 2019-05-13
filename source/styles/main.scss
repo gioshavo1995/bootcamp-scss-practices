@@ -22,6 +22,8 @@ $color-6: #CFD2D3;
         position: relative;
         border-radius: 10px;
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
 
         div {
             
@@ -42,38 +44,39 @@ $color-6: #CFD2D3;
             }
 
         }  
+        &::before{
+            font-family: FontAwesome;
+            content: "\f12a";
+            width: 60px;
+            height: 60px;
+            background: #FFC12D;
+            border: 3px solid #F9B718;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;;
+        }
     }
     
-    .alert::before{
-        font-family: FontAwesome;
-        content: "\f12a";
-        width: 60px;
-        height: 60px;
-        background: #FFC12D;
-        border: 3px solid #F9B718;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 60px;
-        margin-right: 20px;;
-
-         
-        
-    }
+    
 
     a {
         position: absolute;
         top: 10px;
         right: 10px;
         text-decoration: none;
+
+        &::after{
+            font-family: FontAwesome;
+            content: "\f00d";
+            color: $color-6;
+            font-size: 14px;
+        }
         
     }
 
-    a::after{
-        font-family: FontAwesome;
-        content: "\f00d";
-        color: $color-6;
-        font-size: 14px;
-    }
+    
 
 }
 
