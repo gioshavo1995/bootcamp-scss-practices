@@ -12,6 +12,7 @@ $color-11:#7BC200;
 $color-12: #F55C43;
 $color-13: #47B4F6;
 $color-14: #8781BD;
+$color-15: #2C3E50;
 
 *{
     padding: 0;
@@ -26,6 +27,7 @@ $color-14: #8781BD;
     display: grid;
     grid-template-columns: repeat(2, 700px);
     grid-gap: 15px;
+
 
     .alert {
         border: 1px solid $color-1;
@@ -84,7 +86,7 @@ $color-14: #8781BD;
         &::after{
             font-family: FontAwesome;
             content: "\f00d";
-            color: $color-6;
+            color: $color-3;
             font-size: 14px;
         }
         
@@ -125,6 +127,47 @@ $color-14: #8781BD;
         border-color: $color-14;
         content: "\f129";
         color: $color-14;
+
+    }
+
+    .solid {
+        background: $color-2;
+
+      div   p, div h3, div a::after{
+            color: $color-15;
+        }
+        
+    }
+
+    .success.solid {
+        background: $color-7;
+
+        a::after{
+            color: $color-11;
+        }
+
+    }
+    .danger.solid {
+        background: $color-8;
+
+        a::after{
+            color: $color-12;
+        }
+    }
+
+    .flash.solid {
+        background: $color-9;
+
+        a::after{
+            color: $color-13;
+        }
+    }
+    .info.solid {
+        background: $color-10;
+
+        a::after{
+            color: $color-14;
+        }
     }
 
 }
