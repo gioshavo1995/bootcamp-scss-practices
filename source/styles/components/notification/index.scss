@@ -6,6 +6,71 @@
     border: 1px solid $color-1;
     border-radius: 10px;
 
+    a {
+        position: absolute;
+        top: 14px;
+        right: 18px;
+        text-decoration: none;
+
+        &::after {
+            content: '\f00d';
+            color: $color-4;
+            font-family: 'FontAwesome', sans-serif;
+            font-size: 14px;
+        }
+    }
+
+    &.solid a::after {
+        color: $color-3;
+    }
+
+    &.warning.solid::before {
+        border-color: $color-3;
+        background: $color-2;
+        color: $color-3;
+    }
+
+    &.success {
+
+        &::before {
+            content: '\f00c';
+            border-color: $color-11;
+            background: $color-7;
+            color: $color-11;
+        }
+
+        &.solid::before {
+            background: $color-7;
+        }
+    }
+
+    &.danger {
+
+        &::before {
+            content: '\f00d';
+            border-color: $color-12;
+            background: $color-8;
+            color: $color-12;
+        }
+    }
+
+    &.flash::before {
+        content: '\f0e7';
+        border-color: $color-13;
+        background: $color-9;
+        color: $color-13;
+    }
+
+    &.info {
+
+        &::before {
+            content: '\f129';
+            border-color: $color-14;
+            background: $color-10;
+            color: $color-14;
+        }
+    }
+
     div {
 
         h3 {
@@ -27,6 +92,48 @@
         }
     }
 
+    &.solid {
+        background: $color-2;
+
+        div p,
+        div h3,
+        div a::after {
+            color: $color-15;
+        }
+    }
+
+    &.success.solid {
+        background: $color-7;
+
+        a::after {
+            color: $color-11;
+        }
+    }
+
+    &.danger.solid {
+        background: $color-8;
+
+        a::after {
+            color: $color-12;
+        }
+    }
+
+    &.flash.solid {
+        background: $color-9;
+
+        a::after {
+            color: $color-13;
+        }
+    }
+
+    &.info.solid {
+        background: $color-10;
+
+        a::after {
+            color: $color-14;
+        }
+    }
+
     &::before {
         content: '\f12a';
         display: flex;
@@ -38,104 +145,10 @@
         margin-right: 28px;
         border: 7px solid;
         border-radius: 50%;
-        border-color: $color-3;
+        border-color: $color-16;
         background: $color-2;
-        color: $color-3;
-        font-family: 'FontAwesome';
-    }
-}
-
-a {
-    position: absolute;
-    top: 14px;
-    right: 18px;
-    text-decoration: none;
-
-    &::after {
-        content: '\f00d';
-        color: $color-3;
-        font-family: 'FontAwesome';
-        font-size: 14px;
-    }
-}
-
-.warning::before {
-    border-color: $color-3;
-    background: $color-2;
-    color: $color-3;
-}
-
-.success::before {
-    content: '\f00c';
-    border-color: $color-11;
-    background: $color-7;
-    color: $color-11;
-}
-
-.danger::before {
-    content: '\f00d';
-    border-color: $color-12;
-    background: $color-8;
-    color: $color-12;
-}
-
-.flash::before {
-    content: '\f0e7';
-    border-color: $color-13;
-    background: $color-9;
-    color: $color-13;
-}
-
-.info {
-    grid-column: span 2;
-    margin-top: -2px;
-}
-
-.info::before {
-    content: '\f129';
-    border-color: $color-14;
-    background: $color-10;
-    color: $color-14;
-}
-
-.solid {
-    background: $color-2;
-
-    div p,
-    div h3,
-    div a::after {
-        color: $color-15;
-    }
-}
-
-.success.solid {
-    background: $color-7;
-
-    a::after {
-        color: $color-11;
-    }
-}
-
-.danger.solid {
-    background: $color-8;
-
-    a::after {
-        color: $color-12;
-    }
-}
-
-.flash.solid {
-    background: $color-9;
-
-    a::after {
-        color: $color-13;
-    }
-}
-
-.info.solid {
-    background: $color-10;
-
-    a::after {
-        color: $color-14;
+        color: $color-16;
+        font-family: 'FontAwesome', sans-serif;
+        font-size: 25px;
     }
 }
